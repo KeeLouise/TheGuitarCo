@@ -1,8 +1,9 @@
 nav{
-    background-color: rgb(0 0 0 / 70%);
-    font-size: 150%;}
+    font-size: 150%;
+    }
 
-nav { padding-left: 0;
+nav { 
+    padding-bottom: 2em;
     display: flex; 
     flex-direction: row; 
     flex-wrap: wrap; 
@@ -13,9 +14,15 @@ nav li { width: 20%;
     text-align: center;
     margin: .5em;
     padding: .5em;
-    font-family: sans-serif; }
+    font-family: sans-serif;
+ }
 nav a { text-decoration: none;}
-nav a:link { color: orange;
+nav a:link  {
+             color: orange;
+             background-color: rgb(0 0 0 / 70%);
+             border:2px solid white;
+             border-radius: 10px;
+             border
              }
 nav a:visited { color: white }
 nav a:hover { color: green }
@@ -26,23 +33,24 @@ h1 {
 }
 
 body { background-color: whitesmoke;
-        background-image: url(./diogo-palhais-tnzzr8HpLhs-unsplash.jpg);
+        background-image: url(./pexels-athena-1778810.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed
 
      }
  
-main {  margin: 0;
-        text-align: left;
-        width: 100%;
+main {  margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 175px;
+        margin-right: 175px;
+        text-align: center;
         font-family: sans-serif;
         font-style: italic;
-        font-size: 150%;
-        color: #ffa857;
+        font-size: 100%%;
+        color: orange;
         background-color: rgb(0 0 0 / 70%);
         border: 1px solid white;
-        
         
     }
 
@@ -57,13 +65,7 @@ footer {font-family: sans-serif;
        }
 
 aside {
-    margin: 0;
-    color: whitesmoke;
-    background-color: rgba(223, 101, 14, 0.7);
-    border: 1px solid white;
-    width: 100%;
-    text-wrap: wrap;
-    max-height: 75%;
+    display: none;
     
 
 
@@ -72,12 +74,52 @@ aside {
            grid-template-columns: 150px, 150px, 150px, 150px;
            grid-template-rows: 150px 150px 50px; }
 header { grid-row: 1 / 2; grid-column: 1 / 4; }
-nav    { grid-row: 4 / 5; grid-column: 1 / 4 }
-main   { grid-row: 7 / 8; grid-column: 1 / 3; }
-aside  { grid-row: 7 / 9; grid-column: 3/ 4; }
-footer { grid-row: 10 / 12; grid-column: 1 / 4; }
+nav    { grid-row: 3 / 4; grid-column: 1 / 4 }
+main   { grid-row: 5 / 6; grid-column: 1 / 4; }
+aside  { grid-row: 5 / 6; grid-column: 3/ 4; }
+footer { grid-row: 6 / 7; grid-column: 1 / 4; }
 
-#scrollfunction {
-    overflow:scroll;
+@media only screen and (max-width: 430px) {
+    nav {
+            font-size: 100%;
+            padding-bottom: 2em;
+            display: flex; 
+            flex-direction: row; 
+            flex-wrap: wrap; 
+            justify-content: space-around; }
+
+    nav li {
+        width: 50%;
+        font-size: 100;
+        text-align: center;
+        margin: .5em;
+        padding: .5em;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    main {
+        margin: 5px;
+        padding: 0.8em;
+        font-size: 75%;
+
+    }
+
+    footer {
+        font-size: 90%;
+    }
+    footer {font-family: sans-serif;
+        font-style: bold;
+        font-size: 75%;
+        color: whitesmoke;
+       }
+
+body{
+    background-color: grey;
+        background-image: url(./pexels-athena-1778810.jpg);
+        background-repeat: no-repeat;
+        background-size:contain;
 }
-
