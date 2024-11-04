@@ -1,21 +1,18 @@
 nav{
     font-size: 150%;
     }
-
-nav { 
-    padding-bottom: 2em;
-    display: flex; 
-    flex-direction: row; 
-    flex-wrap: wrap; 
-    justify-content: space-around; }	  
-nav li { width: 20%;
-    min-width: 6em;
-    font-size: 200%;
-    text-align: center;
-    margin: .5em;
-    padding: .5em;
-    font-family: sans-serif;
- }
+    
+    nav ul {
+        list-style-type: none;   
+        padding bottom: 2em;            
+        margin: 0;               
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-around;
+    }
+    
+    
 nav a { text-decoration: none;}
 nav a:link  {
              color: orange;
@@ -80,26 +77,30 @@ aside  { grid-row: 5 / 6; grid-column: 3/ 4; }
 footer { grid-row: 6 / 7; grid-column: 1 / 4; }
 
 @media only screen and (max-width: 430px) {
-    nav {
-            font-size: 100%;
-            padding-bottom: 2em;
+    nav{
+            font-size: 115%;
             display: flex; 
             flex-direction: row; 
             flex-wrap: wrap; 
-            justify-content: space-around; }
+            justify-content: center;
+            align-items: center;
+         }
 
-    nav li {
-        width: 50%;
-        font-size: 100;
-        text-align: center;
-        margin: .5em;
-        padding: .5em;
-        font-family: sans-serif;
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
     }
 
-    h1 {
+    nav ul li {
+            text-align: center;
+            margin: 0 5px;
+            padding-bottom: 0.5em;
     
+        
     }
+
 
     main {
         margin: 5px;
@@ -119,7 +120,7 @@ footer { grid-row: 6 / 7; grid-column: 1 / 4; }
 
 body{
     background-color: grey;
-        background-image: url(./Background\ image-pexels.jpg);
+        background-image: url(./Background\ mobile\ image-pexels.jpg);
         background-repeat: no-repeat;
-        background-size:contain;
+        background-size:cover;
 }}
