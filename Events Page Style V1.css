@@ -1,0 +1,169 @@
+.desktop-logo{
+    display: inline;
+}
+.mobile-logo{
+    display: none;
+}
+
+header{text-align: center;
+    font-size: 150%;
+    }
+h1{
+
+}
+nav{
+    font-size: 150%;
+    }
+    
+    nav ul {
+        list-style-type: none;          
+        margin: 0;               
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-around;
+    }
+    
+    
+nav a { text-decoration: none;}
+nav a:link  {
+             color: orange;
+             background-color: rgb(0 0 0 / 70%);
+             border:2px solid white;
+             }
+nav a:visited { color: white }
+nav a:hover { color: green }
+
+.eventinfo {
+    text-align: center;
+    font-size: 100%;
+    font-family: sans-serif;
+    font-style: italic;
+    color: orange;
+    background-color: rgb(0 0 0 / 70%);
+    border: 2px solid white;
+    margin-left: 175px;
+    margin-right: 175px;
+}
+
+a[href^="mailto:"]
+{ 
+  font-family: sans-serif;
+  color: white;
+  font-size: 100%;
+}
+
+
+body {  background-color: black;
+        background-image: url(./pexels-wildlittlethingsphoto-3947517.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+     }
+ 
+
+
+h2{ text-align: center;
+    color: white;
+    background-color: rgb(0 0 0 / 70%);
+    margin-left: 250px;
+    margin-right: 250px;
+    border: 2px solid white;}
+
+
+footer {font-family: sans-serif;
+        font-style: bold;
+        font-size: 100%;
+        color: whitesmoke;
+       }
+
+aside {
+    display: none;
+    
+
+
+}
+#wrapper { display: grid;
+           grid-template-columns: 150px, 150px, 150px, 150px;
+           grid-template-rows: 150px 150px 50px; }
+header { grid-row: 1 / 2; grid-column: 1 / 4; }
+nav    { grid-row: 3 / 4; grid-column: 1 / 4 }
+main   { grid-row: 5 / 6; grid-column: 1 / 4; }
+aside  { grid-row: 5 / 6; grid-column: 3/ 4; }
+footer { grid-row: 6 / 7; grid-column: 1 / 4; }
+
+
+
+table, th, td {
+    border: 1px inset black;
+    align-items: center;
+    background-color: orange;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media only screen and (max-width: 430px) {
+    
+    .desktop-logo{
+        display: none;
+    }
+    .mobile-logo{
+        display: inline;
+    }
+    nav{
+            font-size: 115%;
+            display: flex; 
+            flex-direction: row; 
+            flex-wrap: wrap; 
+            justify-content: center;
+            align-items: center;
+         }
+
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+            text-align: center;
+            margin: 0 5px;
+            padding-bottom: 0.5em;
+    
+        
+    }
+
+h2{
+    margin-left: 75px;
+    margin-right: 75px;
+}
+    .eventinfo {
+        padding: 0.8em;
+        font-size: 75%;
+        margin-left: 75px;
+        margin-right: 75px;
+
+    }
+
+#table {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+    footer {
+        font-size: 90%;
+    }
+    footer {font-family: sans-serif;
+        font-style: bold;
+        font-size: 75%;
+        color: whitesmoke;
+       }
+
+body{
+    background-color: grey;
+        background-image: url(./mobile\ background\ image-pexels.jpeg);
+        background-repeat: no-repeat;
+        background-size:cover;
+}}
