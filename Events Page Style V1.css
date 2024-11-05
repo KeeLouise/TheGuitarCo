@@ -59,6 +59,7 @@ body {  background-color: black;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        margin: 0;
 
      }
  
@@ -71,6 +72,24 @@ h2{ text-align: center;
     margin-right: 250px;
     border: 2px solid white;}
 
+    table, th, td {
+        border: 1px inset black;
+        align-items: center;
+        background-color: orange;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+#video-container{ 
+    display: grid;
+    justify-content: center;
+    align-items: center;      
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 footer {font-family: sans-serif;
         font-style: bold;
@@ -80,10 +99,7 @@ footer {font-family: sans-serif;
 
 aside {
     display: none;
-    
-
-
-}
+    }
 #wrapper { display: grid;
            grid-template-columns: 150px, 150px, 150px, 150px;
            grid-template-rows: 150px 150px 50px; }
@@ -93,15 +109,6 @@ main   { grid-row: 5 / 6; grid-column: 1 / 4; }
 aside  { grid-row: 5 / 6; grid-column: 3/ 4; }
 footer { grid-row: 6 / 7; grid-column: 1 / 4; }
 
-
-
-table, th, td {
-    border: 1px inset black;
-    align-items: center;
-    background-color: orange;
-    margin-left: auto;
-    margin-right: auto;
-  }
   @media only screen and (max-width: 430px) {
     
     .desktop-logo{
@@ -166,4 +173,5 @@ body{
         background-image: url(./mobile\ background\ image-pexels.jpeg);
         background-repeat: no-repeat;
         background-size:cover;
+        background-position: center;
 }}
