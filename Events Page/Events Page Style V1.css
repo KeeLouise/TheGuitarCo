@@ -13,6 +13,11 @@ h1{
 }
 nav{
     font-size: 150%;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: black;
+    height: fit-content;
     }
     
     nav ul {
@@ -22,14 +27,16 @@ nav{
         flex-direction: row; 
         flex-wrap: wrap; 
         justify-content: space-around;
+    
     }
     
     
 nav a { text-decoration: none;}
 nav a:link  {
              color: orange;
-             background-color: rgb(0 0 0 / 70%);
-             border:2px solid white;
+             border:1px solid white;
+             padding-left: 0.5em;
+           padding-right: 0.5em;
              }
 nav a:visited { color: white }
 nav a:hover { color: green }
@@ -135,7 +142,6 @@ footer { grid-row: 6 / 7; grid-column: 1 / 4; }
     nav ul li {
             text-align: center;
             margin: 0 5px;
-            padding-bottom: 0.5em;
     
         
     }

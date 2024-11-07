@@ -6,6 +6,11 @@
 }
 nav{
     font-size: 150%;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: black;
+    height: fit-content;
     }
     
     nav ul {
@@ -15,6 +20,7 @@ nav{
         flex-direction: row; 
         flex-wrap: wrap; 
         justify-content: space-around;
+        position: sticky;
     }
     
     
@@ -23,6 +29,8 @@ nav a:link  {
              color: orange;
              background-color: rgb(0 0 0 / 70%);
              border:2px solid white;
+             padding-left: 0.5em;
+           padding-right: 0.5em;
              }
 nav a:visited { color: white }
 nav a:hover { color: green }
@@ -42,8 +50,8 @@ body { background-color: whitesmoke;
  
 main {  margin-top: 20px;
         margin-bottom: 150px;
-        margin-left: 175px;
-        margin-right: 175px;
+        margin-left: 400px;
+        margin-right: 400px;
         text-align: center;
         font-family: sans-serif;
         font-style: italic;
@@ -51,12 +59,26 @@ main {  margin-top: 20px;
         color: orange;
         background-color: rgb(0 0 0 / 70%);
         border: 1px solid white;
+        padding-bottom: 10px;
         
     }
 
 
 .StoreLink{
-    background-color: white;
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
+
+}
+.events-link{
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
+}
+.contact-link{
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
 }
 footer {font-family: sans-serif;
         font-style: bold;
@@ -96,7 +118,7 @@ footer { grid-row: 6 / 7; grid-column: 1 / 4; }
             align-items: center;
          }
 
-    nav ul{
+     .dropdown-menu{
         list-style-type: none;
         padding: 0;
         margin: 0;
@@ -106,7 +128,6 @@ footer { grid-row: 6 / 7; grid-column: 1 / 4; }
     nav ul li {
             text-align: center;
             margin: 0 5px;
-            padding-bottom: 0.5em;
     
         
     }
@@ -133,4 +154,5 @@ body{
         background-image: url(./Background\ mobile\ image-pexels.jpg);
         background-repeat: no-repeat;
         background-size:cover;
-}}
+}
+}
