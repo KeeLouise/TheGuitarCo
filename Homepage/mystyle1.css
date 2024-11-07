@@ -1,0 +1,136 @@
+.desktop-logo{
+    display: inline;
+}
+.mobile-logo{
+    display: none;
+}
+nav{
+    font-size: 150%;
+    }
+    
+    nav ul {
+        list-style-type: none;          
+        margin: 0;               
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-around;
+    }
+    
+    
+nav a { text-decoration: none;}
+nav a:link  {
+             color: orange;
+             background-color: rgb(0 0 0 / 70%);
+             border:2px solid white;
+             }
+nav a:visited { color: white }
+nav a:hover { color: green }
+
+h1 {
+    text-align: center;
+
+}
+
+body { background-color: whitesmoke;
+        background-image: url(./Background\ image-pexels.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+     }
+ 
+main {  margin-top: 20px;
+        margin-bottom: 150px;
+        margin-left: 175px;
+        margin-right: 175px;
+        text-align: center;
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 100%;
+        color: orange;
+        background-color: rgb(0 0 0 / 70%);
+        border: 1px solid white;
+        
+    }
+
+
+.StoreLink{
+    background-color: white;
+}
+footer {font-family: sans-serif;
+        font-style: bold;
+        font-size: 100%;
+        color: whitesmoke;
+       }
+
+aside {
+    display: none;
+    
+
+
+}
+#wrapper { display: grid;
+           grid-template-columns: 150px, 150px, 150px, 150px;
+           grid-template-rows: 150px 150px 50px; }
+header { grid-row: 1 / 2; grid-column: 1 / 4; }
+nav    { grid-row: 3 / 4; grid-column: 1 / 4 }
+main   { grid-row: 5 / 6; grid-column: 1 / 4; }
+aside  { grid-row: 5 / 6; grid-column: 3/ 4; }
+footer { grid-row: 6 / 7; grid-column: 1 / 4; }
+
+@media only screen and (max-width: 430px) {
+    
+    .desktop-logo{
+        display: none;
+    }
+    .mobile-logo{
+        display: inline;
+    }
+    nav{
+            font-size: 115%;
+            display: flex; 
+            flex-direction: row; 
+            flex-wrap: wrap; 
+            justify-content: center;
+            align-items: center;
+         }
+
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    nav ul li {
+            text-align: center;
+            margin: 0 5px;
+            padding-bottom: 0.5em;
+    
+        
+    }
+
+
+    main {
+        margin: 5px;
+        padding: 0.8em;
+        font-size: 75%;
+
+    }
+
+    footer {
+        font-size: 90%;
+    }
+    footer {font-family: sans-serif;
+        font-style: bold;
+        font-size: 75%;
+        color: whitesmoke;
+       }
+
+body{
+    background-color: grey;
+        background-image: url(./Background\ mobile\ image-pexels.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+}}
