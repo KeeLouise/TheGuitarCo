@@ -1,15 +1,27 @@
+.desktop-logo{
+    display: inline;
+}
+.mobile-logo{
+    display: none;
+}
 nav{
     font-size: 150%;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: black;
+    height: fit-content;
     }
     
     nav ul {
-        list-style-type: none;   
-        padding bottom: 2em;            
-        margin: 0;               
+        list-style-type: none;          
+        margin: 0; 
+        padding: 0;              
         display: flex;
         flex-direction: row; 
         flex-wrap: wrap; 
         justify-content: space-around;
+        position: sticky;
     }
     
     
@@ -18,8 +30,8 @@ nav a:link  {
              color: orange;
              background-color: rgb(0 0 0 / 70%);
              border:2px solid white;
-             border-radius: 10px;
-             border
+             padding-left: 0.5em;
+           padding-right: 0.5em;
              }
 nav a:visited { color: white }
 nav a:hover { color: green }
@@ -30,30 +42,44 @@ h1 {
 }
 
 body { background-color: whitesmoke;
-        background-image: url(./Background\ image-pexels.jpg);
+        background-image: url(../Home/images/Backgroundimage-pexels.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed
+        background-attachment: fixed;
 
      }
  
 main {  margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 175px;
-        margin-right: 175px;
+        margin-bottom: 150px;
+        margin-left: 400px;
+        margin-right: 400px;
         text-align: center;
         font-family: sans-serif;
         font-style: italic;
-        font-size: 100%%;
+        font-size: 100%;
         color: orange;
         background-color: rgb(0 0 0 / 70%);
         border: 1px solid white;
+        padding-bottom: 10px;
         
     }
 
 
 .StoreLink{
-    background-color: white;
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
+
+}
+.events-link{
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
+}
+.contact-link{
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
 }
 footer {font-family: sans-serif;
         font-style: bold;
@@ -77,8 +103,15 @@ aside  { grid-row: 5 / 6; grid-column: 3/ 4; }
 footer { grid-row: 6 / 7; grid-column: 1 / 4; }
 
 @media only screen and (max-width: 430px) {
+    
+    .desktop-logo{
+        display: none;
+    }
+    .mobile-logo{
+        display: inline;
+    }
     nav{
-            font-size: 115%;
+            font-size: 100%;
             display: flex; 
             flex-direction: row; 
             flex-wrap: wrap; 
@@ -86,17 +119,10 @@ footer { grid-row: 6 / 7; grid-column: 1 / 4; }
             align-items: center;
          }
 
-    nav ul{
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-    }
 
     nav ul li {
             text-align: center;
             margin: 0 5px;
-            padding-bottom: 0.5em;
     
         
     }
@@ -120,7 +146,10 @@ footer { grid-row: 6 / 7; grid-column: 1 / 4; }
 
 body{
     background-color: grey;
-        background-image: url(./Background\ mobile\ image-pexels.jpg);
+        background-image: url(../Home/images/Backgroundmobileimage-pexels.jpg);
         background-repeat: no-repeat;
         background-size:cover;
-}}
+}
+
+
+
