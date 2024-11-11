@@ -36,6 +36,9 @@ nav a:link  {
 nav a:visited { color: white }
 nav a:hover { color: green }
 
+header{
+    text-align: center;
+}
 h1 {
     text-align: center;
 
