@@ -6,11 +6,8 @@
 }
 
 header{text-align: center;
-    font-size: 150%;
     }
-h1{
 
-}
 nav{
     font-size: 150%;
     position: sticky;
@@ -74,7 +71,7 @@ body {  background-color: black;
  
 
 
-h2{ text-align: center;
+h1{ text-align: center;
     color: white;
     background-color: rgb(0 0 0 / 70%);
     margin-left: 250px;
@@ -148,7 +145,7 @@ footer { grid-row: 6 / 7; grid-column: 1 / 4; }
         
     }
 
-h2{
+h1{
     margin-left: 75px;
     margin-right: 75px;
 }

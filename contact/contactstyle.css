@@ -40,7 +40,7 @@ nav a:link  {
 nav a:visited { color: white }
 nav a:hover { color: green }
 html,body {
-  background-image: url(../Contact/images/pexels-pixabay-290660.jpg);
+  background-image: url(./images/pexels-pixabay-290660.jpg);
   background-color: black;
   background-position:center;
   background-size: cover;
@@ -190,7 +190,7 @@ footer { grid-row: 6 / 7; grid-column: 1 / 4; }
      }
 
 body{
-      background-image: url(../Contact/images/pexels-hikaique-379958.jpg);
+      background-image: url(./images/pexels-hikaique-379958.jpg);
       background-repeat: no-repeat;
       background-size:cover;
       background-position: center;
