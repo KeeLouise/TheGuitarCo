@@ -64,7 +64,7 @@ a[href^="mailto:"]
 
 
 body {  background-color: black;
-        background-image: url(./images/pexels-wildlittlethingsphoto-3947517.jpg);
+        background-image: url(../images/pexels-wildlittlethingsphoto-3947517.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -178,7 +178,7 @@ h2{
 
 body{
         background-color: grey;
-        background-image: url(./images/mobilebackgroundimage-pexels.jpeg);
+        background-image: url(../images/mobilebackgroundimage-pexels.jpeg);
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center;
