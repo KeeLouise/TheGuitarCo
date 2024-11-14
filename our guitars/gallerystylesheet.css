@@ -32,6 +32,7 @@ nav a:link  {
              border:2px solid white;
              padding-left: 0.5em;
            padding-right: 0.5em;
+           font-family: sans-serif;
              }
 nav a:visited { color: white }
 nav a:hover { color: green }
@@ -44,7 +45,6 @@ h1 {
     color: orange;
     background-color: black;
     border: 2px solid white;
-    margin-top: 25px;
     margin-left: 300px;
     margin-right: 300px;
 
@@ -53,21 +53,21 @@ h1 {
 body { 
     
     background-color: whitesmoke;
-    background-image: url(./images/desktop-background-pexels.jpg);
+    background-image: url(./Background\ Image\ Dublin\ \(3\).webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
 
  }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-main{
+main {  
+    
     margin: 0;
+    text-align: center;
+    font-size: 100%;
+    color: orange;
+    
 }
 
 /* Flexbox gallery container */
@@ -76,7 +76,6 @@ main{
     flex-wrap: wrap;
     gap: 16px;
     justify-content: center;
-    padding: 20px;
 }
 
 /* Gallery item styling */
@@ -132,13 +131,13 @@ h2 {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin: 0;
 }
 
 table {
     width: 45%;
     border-collapse: collapse;
-    margin-bottom: 30px;
+    margin: 0;
 }
 
 th {
@@ -171,8 +170,29 @@ footer {font-family: sans-serif;
     color: whitesmoke;
    }
 
- @media (max-width: 600px) {
-    .table-container {
+ @media (max-width: 430px) {
+    .desktop-logo{
+        display: none;
+    }
+    .mobile-logo{
+        display: inline;
+    }
+    nav{
+            font-size: 100%;
+            display: flex; 
+            flex-direction: row; 
+            flex-wrap: wrap; 
+            justify-content: center;
+            align-items: center;
+         }
+
+
+    nav ul li {
+            text-align: center;
+            margin: 0 5px;
+    
+        
+    }.table-container {
         flex-direction: column;
         align-items: center;
     }
