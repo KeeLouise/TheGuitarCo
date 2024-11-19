@@ -62,7 +62,7 @@ a[href^="mailto:"]
 
 
 body {  background-color: black;
-        background-image: url(./pexels-wildlittlethingsphoto-3947517.jpg);
+        background-image: url(./images/desktopbackgroundimage-pexels.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -104,8 +104,9 @@ h1{
 footer {font-family: sans-serif;
         font-style: bold;
         font-size: 100%;
-        color: whitesmoke;
-       }
+        color: white;
+        text-shadow: 2px 2px black;
+    }
 
 aside {
     display: none;
@@ -171,12 +172,13 @@ h1{
     footer {font-family: sans-serif;
         font-style: bold;
         font-size: 75%;
-        color: whitesmoke;
+        color: white;
+        text-shadow: 2px 2px black;
        }
 
 body{
         background-color: grey;
-        background-image: url(./mobilebackgroundimage-pexels.jpeg);
+        background-image: url(./images/mobilebackgroundimage-pexels.jpeg);
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center;
@@ -215,7 +217,8 @@ body{
 
     footer {font-family: sans-serif;
         font-style: bold;
-        color: whitesmoke;
+        color: white;
+        text-shadow: 2px 2px black;
        }
 
 
