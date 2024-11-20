@@ -1,6 +1,9 @@
 .desktop-logo{
     display: inline;
 }
+.tablet-logo{
+    display: none;
+}
 .mobile-logo{
     display: none;
 }
@@ -25,7 +28,8 @@ nav{
         display: flex;
         flex-direction: row; 
         flex-wrap: wrap; 
-        justify-content: space-around;
+        justify-content: center;
+        gap: 50px;
         position: sticky;
     }
     
@@ -125,6 +129,9 @@ footer { grid-row: 6 / 7; grid-column: 1 / 4; }
     .desktop-logo{
         display: none;
     }
+    .tablet-logo{
+        display: none;
+    }
     .mobile-logo{
         display: inline;
     }
@@ -141,6 +148,7 @@ footer { grid-row: 6 / 7; grid-column: 1 / 4; }
         list-style-type: none;
         padding: 0;
         margin: 0;
+        gap: 20px;
     }
 
     nav ul li {
@@ -188,8 +196,11 @@ body{
     .desktop-logo{
         display: none;
     }
-    .mobile-logo{
+    .tablet-logo{
         display: inline;
+    }
+    .mobile-logo{
+        display: none;
     }
     nav{
             font-size: 100%;

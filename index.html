@@ -1,48 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="homepagecss.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gallery</title>
+    <link rel="stylesheet" href="./gallerystylesheet.css">
 </head>
 <body>
-  <div id="wrapper">
-  <header class="header">
-      <a href="#"> <img src="Logo-Desktop.png" alt="Company Logo" class="desktop-logo"></a>
-      <img src="Logo-Mobile.png" alt="Company Logo" class="mobile-logo">
-  </header>
-    <nav>
-      <ul>
-      <li><a href="./our gallery/" target="_blank">OUR GALLERY</a></li>
-      <li><a href="./events/" target="_blank">OUR EVENTS</a></li>
-      <li><a href="https://www.google.com" target="_blank">ABOUT US</a></li>
-      <li><a href="./contact/" target="_blank">CONTACT</a></li>
-    </ul>
-    </nav>
+	<div id="wrapper">
+		<header class="header">
+			<a href="#"> <img src="./images/Logo-large.png" width="500" height="250" alt="Company Logo" class="desktop-logo"></a>
+			<img src="./images/Logo-medium.png" width="350" height="250" alt="Company Logo" class="tablet-logo">
+			<img src="./images/Logo-small.png" width="250" height="250" alt="Company Logo" class="mobile-logo">
+		</header>
+		  <nav>
+			<ul>
+			<!-- All links to google until sub pages are set up-->
+			<li><a href="/index.html" target="_blank">HOME</a></li>
+			<li><a href="../events/" target="_blank">OUR EVENTS</a></li>
+			<li><a href="../contact/" target="_blank">CONTACT</a></li>
+		  </ul>
+		  </nav>
 <main>
-  <h1>"Don't dream it, do it!"</h1>
-  <p>Welcome to The Guitar Co. Established in 2024, to help musicians with their musical careers.
-  We can also help you get your hands on your dream guitar! Just get in touch via our online <a href="/contact/" class="contact-link">contact form.</a></p>
-  <p class="about-us"></p> The Guitar Co. was established by a group of Musicians who wanted more for the "music scene" in Dublin's Fair City.<br>
-     We believe that any musician can level up their music career learn and therefore we ensure through our fair pricing, that our guitars are accessible to anyone, regardless of their experience.<br>
-     You will also see on our<a href="./events/" class="events-link"> events page </a>that we host a range of events around Dublin every month for players of all levels.<br>
-     For a wide range of guitars and other instruments, please visit <a href="https://www.waltons.ie" class="waltons-link">Waltons</a>
-</main>
-<aside>
-</aside>
-<footer>
-  <hr>
-   Copyright &copy; 2024 The Guitar Co.<br>
-   <p>Unit 2<br>Temple Bar Lane<br>Temple Bar<br>Dublin 2<br>Ireland</p>
-   <div id="newsletter">
-   <h4>Join our newsletter</h4>
-   <form method="get">
-    E-mail: <input type="text" name="email" id="email" placeholder="Please type your email">
-    <button type="button">Sign up to our newsletter!</button>
-    </form>
-  </div>
-</footer>
+<h1>Gallery</h1>
+<div id="gallery">
+    <div id="gallery-item">
+        <img 
+            srcset="./images/image1mobile-pexels.webp 600w, ./images/image1-pexels.webp 1000w, ./images/image1-pexels-large.webp 2000w"
+            sizes="(max-width: 600px) 80vw, (max-width: 1024px) 50vw, 33vw"
+            src="./images/image1-pexels-medium.webp" 
+            width="200" 
+            height="150" 
+            alt="Trio band">
+    </div>
+    <div id="gallery-item">
+        <img 
+            srcset="./images/image2mobile-pexels.webp 600w, ./images/image2-pexels.webp 1000w, ./images/image2-pexels.webp 2000w"
+            sizes="(max-width: 600px) 80vw, (max-width: 1024px) 50vw, 33vw"
+            src="./images/image2-pexels-medium.webp" 
+            width="200" 
+            height="150" 
+            alt="Guitarist">
+    </div>
+    <div id="gallery-item">
+        <img 
+            srcset="./images/image3mobile-pexels.webp 600w, ./images/image3-pexels.webp 1000w, ./images/image3-pexels.webp 2000w"
+            sizes="(max-width: 600px) 80vw, (max-width: 1024px) 50vw, 33vw"
+            src="./images/image3-pexels-medium.webp" 
+            width="200" 
+            height="150" 
+            alt="Bass player">
+    </div>
+    <div id="gallery-item">
+        <img 
+            srcset="./images/image4mobile-pexels.webp 600w, ./images/image4-pexels.webp 1000w, ./images/image4-pexels.webp 2000w"
+            sizes="(max-width: 600px) 80vw, (max-width: 1024px) 50vw, 33vw"
+            src="./images/image4-pexels-medium.webp" 
+            width="200" 
+            height="150" 
+            alt="Trio band">
+    </div>
+    <div id="gallery-item">
+        <img 
+            srcset="./images/image5mobile-pexels.webp 600w, ./images/image5-pexels.webp 1000w, ./images/image5-pexels.webp 2000w"
+            sizes="(max-width: 600px) 80vw, (max-width: 1024px) 50vw, 33vw"
+            src="./images/image5-pexels-medium.webp" 
+            width="200" 
+            height="150" 
+            alt="Rock singer">
+    </div>
+    <div id="gallery-item">
+        <img 
+            srcset="./images/image6mobile-pexels.webp 600w, ./images/image6-pexels.webp 1000w, ./images/image6-pexels.webp 2000w"
+            sizes="(max-width: 600px) 80vw, (max-width: 1024px) 50vw, 33vw"
+            src="./images/image6-pexels-medium.webp" 
+            width="200" 
+            height="150" 
+            alt="Spanish guitarist">
+    </div>
 </div>
-</body>
-</html>
+
+	<footer>
+	  <hr>
+	   Copyright &copy; 2024 The Guitar Co.<br><br>
+	   <p>Unit 2<br>Temple Bar Lane<br>Temple Bar<br>Dublin 2<br>Ireland</p><br>
+	   <div id="newsletter">
+	   <h2>Join our newsletter</h2><br>
+	  <!-- button type set to button as no backend has been set up-->
+	  <form method="get">
+		E-mail: <input type="text" name="email" id="email" placeholder="Please type your email">
+		<button type="button">Sign up to our newsletter!</button>
+		</form>
+	  </div>
+	</footer>
+    </main>
+	</div>
+    </body>
+    </html>

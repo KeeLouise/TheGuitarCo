@@ -1,6 +1,9 @@
 .desktop-logo{
   display: inline;
 }
+.tablet-logo{
+  display: none;
+}
 .mobile-logo{
   display: none;
 }
@@ -25,7 +28,8 @@ nav{
       display: flex;
       flex-direction: row; 
       flex-wrap: wrap; 
-      justify-content: space-around;
+      justify-content: center;
+      gap: 50px;
       position: sticky;
   }
   
@@ -114,11 +118,12 @@ button:hover {
   background-color: #218838;
 }
 
-footer {
-  font-family: sans-serif;
+footer {font-family: sans-serif;
   font-style: bold;
   font-size: 100%;
-  color: whitesmoke;
+  color: white;
+  text-shadow: 2px 2px black;
+  padding-bottom: 10px;
  }
 
 aside {
@@ -138,6 +143,9 @@ footer { grid-row: 6 / 7; grid-column: 1 / 4; }
   .desktop-logo{
       display: none;
   }
+  .tablet-logo{
+    display: none;
+  }
   .mobile-logo{
       display: inline;
   }
@@ -155,6 +163,7 @@ footer { grid-row: 6 / 7; grid-column: 1 / 4; }
 nav ul li {
     text-align: center;
     margin: 0 5px;
+    gap: 20px;
 
 
 }
@@ -202,7 +211,10 @@ body{
       display: none;
   }
   .mobile-logo{
-      display: inline;
+      display: none;
+  }
+  .tablet-logo{
+    display: inline;
   }
   body{
     background-image: url(./images/pexels-hikaique-379958.jpg);
