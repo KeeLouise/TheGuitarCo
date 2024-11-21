@@ -1,73 +1,61 @@
 .desktop-logo{
     display: inline;
 }
-.tablet-logo{
+.mobiletablet-logo{
     display: none;
 }
-.mobile-logo{
-    display: none;
-}
-
-nav {
+nav{
     font-size: 150%;
     background-color: black;
     height: fit-content;
-    margin: 0;
-
 }
-
-nav ul {
-    list-style-type: none;
-    margin:0;
-    padding-inline-start: 0;
+nav ul{
+    list-style-type: none;          
+    margin: 0; 
+    padding: 0;              
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row; 
+    flex-wrap: wrap; 
     justify-content: center;
     gap: 50px;
 }
-
-nav a {
+nav a{ 
     text-decoration: none;
 }
-
-nav a:link {
+nav a:link{
     color: orange;
     background-color: rgb(0 0 0 / 70%);
-    border: 2px solid white;
+    border:2px solid white;
     padding-left: 0.5em;
     padding-right: 0.5em;
     font-family: sans-serif;
 }
-
-nav a:visited {
-    color: white;
+nav a:visited{ 
+    color: white 
 }
-
-nav a:hover {
-    color: green;
+nav a:hover{
+    color: green 
 }
-
-header {
+header{
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
-
-h1 {
+h1{
     text-align: center;
     font-size:xx-large;
     color: white;
     font-family: sans-serif;
 }
-
-html, body {
-    margin: 0;
-    padding: 0;
+body{  
     background-color: black;
-    width: 100%;
-    overflow: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
 }
 
-#gallery {
+#gallery{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -76,92 +64,86 @@ html, body {
 }
 
 #gallery-item{
-    flex: 1 1 calc(33.33% - 20px); /* Ensures 3 images per row with a gap between */
+    flex: 1 1 calc(33.33% - 20px);
     box-sizing: border-box;
     text-align: center;
 }
 
-#gallery-item img {
+#gallery-item img{
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
-
-#gallery-item img:hover {
-    transform: scale(2.0); /* Increase size by 20% on hover */
+#gallery-item img:hover{
+    transform: scale(1.6);
 }
-
-footer {
+footer{
     font-family: sans-serif;
-    font-weight: bold;
+    font-style: bold;
     font-size: 100%;
-    color: whitesmoke;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+    color: white;
+    text-shadow: 2px 2px black;
+    padding-bottom: 10px;
 }
+button{
+    color: black;
+    background-color: orange;
+}
+button:hover{
+    background-color: #218838;
+}
+aside{
+    display: none;
+}
+#wrapper{ 
+    display: grid;
+    grid-template-columns: 150px, 150px, 150px, 150px;
+    grid-template-rows: 150px 150px 50px;
+}
+header{
+    grid-row: 1 / 2; grid-column: 1 / 4;
+}
+nav{
+    grid-row: 3 / 4; grid-column: 1 / 4
+}
+main{
+    grid-row: 5 / 6; grid-column: 1 / 4;
+}
+aside{
+    grid-row: 5 / 6; grid-column: 3/ 4;
+}
+footer{
+    grid-row: 6 / 7; grid-column: 1 / 4;
+}
+
 @media screen and (max-width: 600px) {
-    .desktop-logo {
-        display: none;
-    }
-    .tablet-logo{
-        display: none;
-    }
-
-    .mobile-logo {
-        display: inline;
-
-    }
-    
-    header{
-        overflow: hidden;
-    }
-
-    nav {
-        font-size: 120%; /* Slightly smaller font for mobile */
-    }
-
-
-    nav a {
-        font-size: 1rem; /* Adjust font size for mobile */
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-
-    h1 {
-        font-size: 1.5rem; /* Make heading smaller */
-    }
-    #gallery-item img {
-        max-width: 100%;
-        border-radius: 8px;
-    }
+.desktop-logo{
+    display: none;
 }
+.mobiletablet-logo{
+    display: inline;
+}
+nav{
+    font-size: 100%;
+}
+nav ul{
+    gap: 20px;
+}
+#gallery-item img{
+    max-width: 75%;
+    border-radius: 8px;
+}
+#gallery-item img:hover{
+    transform: scale(1.2);
+}}
 
-/* Tablet Styles */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-    .desktop-logo {
-        display: none;
-    }
-    .tablet-logo{
-        display: inline;
-    }
-
-    .mobile-logo {
-        display: none;
-    }
-
-    nav {
-        font-size: 130%; /* Slightly smaller font for tablet */
-    }
-
-    nav ul {
-        flex-direction: row; /* Keep horizontal layout */
-        justify-content: space-around; /* Adjust spacing for tablets */
-    }
-
-    nav a {
-        font-size: 1.2rem; /* Slightly larger font size for tablet */
-    }
-
-    h1 {
-        font-size: 2rem; /* Adjust heading size for tablet */
-    }
+.desktop-logo{
+    display: none;
 }
+.mobiletablet-logo{
+    display: inline;
+}
+nav ul li{
+    text-align: center;
+    margin: 0 5px;
+}}

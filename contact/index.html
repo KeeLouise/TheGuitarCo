@@ -8,25 +8,24 @@
 </head>
 <body>
   <div id="wrapper">
-    <header class="header">
-      <a href="#"> <img src="./images/Logo-large.png" width="500" height="250" alt="Company Logo" class="desktop-logo"></a>
-      <img src="./images/Logo-medium.png" width="350" height="250" alt="Company Logo" class="tablet-logo">
-      <img src="./images/Logo-small.png" width="250" height="250" alt="Company Logo" class="mobile-logo">
+  <header class="header">
+      <img src="./images/Logo-large.png" width="500" height="250" alt="Company Logo" class="desktop-logo">
+      <img src="./images/Logo-medium.png" width="350" height="250" alt="Company Logo" class="mobiletablet-logo">
   </header>
-    <nav>
+  <nav>
     <ul>
-      <!-- All links to google until sub pages are set up-->
       <li><a href="/index.html" target="_blank">HOME</a></li>
       <li><a href="../our gallery/" target="_blank">OUR GALLERY</a></li>
       <li><a href="../events/" target="_blank">OUR EVENTS</a></li>
     </ul>
-    </nav>
+  </nav>
 <main>
   <h1 class="contact-intro">Contact Us Below</h1>
   <p class="contact-info">Please feel free to use the below form to submit any suggestions you may have in terms of our<br>
-  service, events and stock. Please also use the below form to make an order for a guitar and we will be in touch to fulfil your order.</P>
+  service, events and stock. Please also use the below form to make an order for a guitar and we will be in touch to fulfil your order.
+  </p>
   <div id="contactform">
-  <form action="submit_form.php" method="post">
+  <form id="form1" action="submit_form.php" method="get">
     <h2>Contact Us</h2>
     <label for="name">Name</label>
     <input type="text" id="name" name="name">
@@ -34,7 +33,7 @@
     <input type="email" id="email" name="email" required>
     <label for="message">Message</label>
     <textarea id="message" name="message" rows="5" required></textarea>
-    <button type="submit">Submit</button>
+    <button id="button1" type="submit">Submit</button>
   </form>
   </div>
 </main>
@@ -42,10 +41,14 @@
 </aside>
 <footer>
   <hr>
-   Copyright &copy; 2024 The Guitar Co.
-   <p>
-   <br>23 Dublin Lane,<br>Temple Bar,<br>Dublin 2
-  </p>
+   Copyright &copy; 2024 The Guitar Co.<br>
+   <p>Unit 2<br>Temple Bar Lane<br>Temple Bar<br>Dublin 2<br>Ireland</p>
+   <h4>Join our newsletter</h4>
+   <!-- button type set to button as no backend has been set up-->
+   <form id="form2" method="get">
+    E-mail: <input id="newsletter" type="text" name="email" id="email" placeholder="Please type your email">
+    <button id="button2" type="button">Sign up to our newsletter!</button>
+    </form>
 </footer>
 </div>
 </body>
