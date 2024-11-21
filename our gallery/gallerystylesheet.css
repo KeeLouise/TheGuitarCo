@@ -129,7 +129,7 @@ nav ul{
     gap: 20px;
 }
 #gallery-item img{
-    max-width: 75%;
+    max-width: 85%;
     border-radius: 8px;
 }
 #gallery-item img:hover{
