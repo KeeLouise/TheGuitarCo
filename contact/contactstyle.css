@@ -184,11 +184,8 @@ nav ul {
   border: 1px solid white;
   }
 footer{
-  font-family: sans-serif;
-  font-style: bold;
-  font-size: 75%;
-  color: whitesmoke;
-}
+ font-size: 75%;
+  }
 body{
   background-image: url(./images/pexels-hikaique-379958.jpg);
   background-repeat: no-repeat;

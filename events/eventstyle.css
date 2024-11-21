@@ -60,6 +60,7 @@ a[href^="mailto:"]{
     font-size: 100%;
 }
 body { 
+    width: 100%;
     background-color: black;
     background-image: url(./images/desktopbackgroundimage-pexels.jpg);
     background-repeat: no-repeat;
@@ -97,11 +98,17 @@ table, th, td{
 }
 
 footer{
+    width: 100%;
     font-family: sans-serif;
     font-style: bold;
     font-size: 100%;
     color: white;
     text-shadow: 2px 2px black;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+footer hr{
+    width: 100%;
 }
 button{
     color: black;
@@ -170,6 +177,10 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    overflow: hidden;
+}
+footer {
+    font-size: 75%;
 }}
 
 @media (max-width: 1024px) {
