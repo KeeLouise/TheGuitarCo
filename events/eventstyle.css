@@ -94,19 +94,12 @@ table, th, td{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
 footer{
     font-family: sans-serif;
     font-style: bold;
     font-size: 100%;
     color: white;
     text-shadow: 2px 2px black;
-    
-}
-hr{
-    display: block;
-    margin: 0;
-    padding: 0;
 }
 button{
     color: black;
@@ -170,6 +163,10 @@ h1{
     margin-left: 20px;
     margin-right: 20px;
 }
+iframe {
+    width: 100%;    /* 100% of the container width */
+    height: auto;   /* Height adjusts automatically based on content */
+  }
 body{
     background-image: url(./images/mobilebackgroundimage-pexels.jpeg);
     background-repeat: no-repeat;
