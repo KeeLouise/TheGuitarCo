@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact page containing a contact form to get in touch with us.">
+  <meta name="author" content="Kiera Reidy">
+  <meta name="robots" content="index, follow"> <!-- to direct search engines -->
+  <title>Document</title>
+  <link href="./contactstyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div id="wrapper">
+  <header class="header">
+      <img src="./images/Logo-large.webp" width="500" height="250" alt="Company Logo" class="desktop-logo">
+      <img src="./images/Logo-medium.webp" width="350" height="250" alt="Company Logo" class="mobiletablet-logo">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../our gallery/index.html">OUR GALLERY</a></li>
+      <li><a href="../events/index.html">OUR EVENTS</a></li>
+    </ul>
+  </nav>
+<main>
+  <h1 class="contact-intro">Contact Us Below</h1>
+  <p class="contact-info">Please feel free to use the below form to submit any suggestions you may have in terms of our<br>
+  service, events and stock. Please also use the below form to make an order for a guitar and we will be in touch to fulfil your order.
+  </p>
+  <div id="contactform">
+  <form id="form1" action="submit_form.php" method="get">
+    <h2>Contact Us</h2>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <button id="button1" type="submit">Submit</button>
+  </form>
+  </div>
+</main>
+<aside>
+</aside>
+<footer>
+  <hr>
+  Copyright &copy; 2024 The Guitar Co.<br>
+  <p>Unit 2<br>Temple Bar Lane<br>Temple Bar<br>Dublin 2<br>Ireland</p>
+  <h2 id="newsletter-heading">Join our newsletter</h2>
+  <form method="get" aria-labelledby="newsletter-heading">
+    E-mail: <input type="text" name="email" id="email" placeholder="Please type your email" aria-describedby="email-instruction">   <!--ARIA Label-->
+    <button type="button" aria-label="Sign up for newsletter">Sign up to our newsletter!</button>   <!--ARIA Label-->
+  </form>
+</footer>
+</div>
+</body>
+</html>

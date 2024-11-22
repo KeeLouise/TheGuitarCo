@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="Homepage for The Guitar Co. Dublin's leading busking Event co-ordinator and private guitar supplier">
+  <meta name="author" content="Kiera Reidy">
+  <meta name="robots" content="index, follow"> <!-- to direct search engines -->
+  <title>Homepage</title>
   <link href="homepagecss.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -12,35 +15,39 @@
       <img src="Logo-large.png" width="500" height="250" alt="Company Logo" class="desktop-logo">
       <img src="Logo-medium.png" width="350" height="250" alt="Company Logo" class="mobiletablet-logo">
   </header>
-    <nav>
-      <ul>
-      <li><a href="./our gallery/index.html" target="_blank">OUR GALLERY</a></li>
-      <li><a href="./events/index.html" target="_blank">OUR EVENTS</a></li>
-      <li><a href="./contact/index.html" target="_blank">CONTACT</a></li>
+
+  <nav>
+    <ul>
+        <li><a href="./our gallery/index.html" aria-current="page">OUR GALLERY</a></li>
+        <li><a href="./events/index.html">OUR EVENTS</a></li>
+        <li><a href="./contact/index.html">CONTACT</a></li>
     </ul>
-    </nav>
-<main>
-  <h1>"Don't dream it, do it!"</h1>
-  <p>Welcome to The Guitar Co. Established in 2024, to help musicians with their musical careers.
-  We can also help you get your hands on your dream guitar! Just get in touch via our online <a href="/contact/" class="contact-link">contact form.</a></p>
-  <p class="about-us"></p> The Guitar Co. was established by a group of Musicians who wanted more for the "music scene" in Dublin's Fair City.<br>
-     We believe that any musician can level up their music career learn and therefore we ensure through our fair pricing, that our guitars are accessible to anyone, regardless of their experience.<br>
-     You will also see on our<a href="./events/" class="events-link"> events page </a>that we host a range of events around Dublin every month for players of all levels.<br>
-     For a wide range of guitars and other instruments, please visit <a href="https://www.waltons.ie" class="waltons-link">Waltons</a>
-</main>
-<aside>
-</aside>
-<footer>
-  <hr>
-   Copyright &copy; 2024 The Guitar Co.<br>
-   <p>Unit 2<br>Temple Bar Lane<br>Temple Bar<br>Dublin 2<br>Ireland</p>
-   <h4>Join our newsletter</h4>
-   <!-- button type set to button as no backend has been set up-->
-   <form method="get">
-    E-mail: <input type="text" name="email" id="email" placeholder="Please type your email">
-    <button type="button">Sign up to our newsletter!</button>
+  </nav>
+
+  <main>
+    <h1>"Don't dream it, do it!"</h1>
+    <p>Welcome to The Guitar Co. Established in 2024, to help musicians with their musical careers.
+       We can also help you get your hands on your dream guitar! Just get in touch via our online <a href="./contact/index.html" class="contact-link">contact form.</a></p>
+    <p class="about-us">The Guitar Co. was established by a group of Musicians who wanted more for the "music scene" in Dublin's Fair City.<br>
+       We believe that any musician can level up their music career learn and therefore we ensure through our fair pricing, that our guitars are accessible to anyone, regardless of their experience.<br>
+       You will also see on our <a href="./events/index.html" class="events-link">events page </a>that we host a range of events around Dublin every month for players of all levels.<br>
+       For a wide range of guitars and other instruments, please visit <a href="https://www.waltons.ie" class="waltons-link">Waltons</a>
+    </p>
+  </main>
+
+  <aside aria-hidden="true"> <!--ARIA Label-->
+  </aside>
+
+  <footer>
+    <hr>
+    Copyright &copy; 2024 The Guitar Co.<br>
+    <p>Unit 2<br>Temple Bar Lane<br>Temple Bar<br>Dublin 2<br>Ireland</p>
+    <h2 id="newsletter-heading">Join our newsletter</h2>
+    <form method="get" aria-labelledby="newsletter-heading">
+      E-mail: <input type="text" name="email" id="email" placeholder="Please type your email" aria-describedby="email-instruction">   <!--ARIA Label-->
+      <button type="button" aria-label="Sign up for newsletter">Sign up to our newsletter!</button>   <!--ARIA Label-->
     </form>
-</footer>
+  </footer>
 </div>
 </body>
 </html>
