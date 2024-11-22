@@ -114,9 +114,11 @@ input, textarea{
   width: auto;
   background-color: orange;
   color: black;
+  font-family: sans-serif;
 }
-#email{
+#newsletter{
   width: auto;
+  font-family: sans-serif;
 }
 #button1, #button2:hover{
   background-color: #218838;
