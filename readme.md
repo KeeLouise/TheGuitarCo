@@ -25,6 +25,7 @@
 
     The gallery will contain images from recent events in a flex display, along with a website logo, navigation bar and an email newseletter sign-up option within the footer, which will also contain the address of the Company. The page will not use a background image as this will take away the visual effects of the gallery.
     
+    Please note that src set was used within the gallery index file in order to make the images responsive.
     Image sources - www.pexels.com
     Website Logo - made with Canva
     Text - custom
