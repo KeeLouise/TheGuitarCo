@@ -4,9 +4,6 @@
 .mobiletablet-logo{
     display: none;
 }
-header{
-    text-align: center;}
-
 nav{
     font-family: sans-serif;
     position: sticky;
@@ -30,10 +27,10 @@ nav a{
     text-decoration: none;
 }
 nav a:link{
+    font-size: 150%;
     color: white;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    font-size: 150%;
 }
 nav a:visited{
     color: white
@@ -43,56 +40,55 @@ nav a:hover{
     background-color: orange;
     
 }
-.eventinfo{
+header{
     text-align: center;
-    font-size: 100%;
-    font-family: sans-serif;
-    font-style: italic;
-    color: orange;
-    background-color: rgb(0 0 0 / 70%);
-    border: 2px solid white;
-    margin-left: 175px;
-    margin-right: 175px;
 }
-a[href^="mailto:"]{ 
-    font-family: sans-serif;
-    color: white;
-    font-size: 100%;
+h1{
+    text-align: center;
 }
-body { 
-    background-color: black;
-    background-image: url(./images/desktopbackgroundimage-pexels.webp);
+body{ 
+    background-color: whitesmoke;
+    background-image: url(./Backgroundimage-pexels.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
-}
-h1{ 
-    font-family: sans-serif;
-    text-align: center;
-    color: orange;
-    text-shadow: 2px 2px black;
-    margin-left: 250px;
-    margin-right: 250px;
-}
-table, th, td{
-    border: 1px inset black;
-    font-family: sans-serif;
-    align-items: center;
-    background-color: orange;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-#video-container{ 
-    display: grid;
-    justify-content: center;
-    align-items: center;      
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+}
+main{  
+    margin-top: 20px;
+    margin-bottom: 150px;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 100%;
+    color: orange;
+    background-color: rgb(0 0 0 / 70%);
+    border: 1px solid white;
+    padding-bottom: 10px;
+    }
+.StoreLink{
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
+
+}
+.events-link{
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
+}
+.contact-link{
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
+}
+.waltons-link{
+    color:white;
+    font-family: sans-serif;
+    font-style: italic;
 }
 footer{
     font-family: sans-serif;
@@ -110,22 +106,22 @@ button{
     width: auto;
     font-family: sans-serif;
 }
-label{
-    width: auto;
-    font-family: sans-serif;
-}
 button:hover{
-        background-color: #218838;
+    background-color: #218838;
 }
-aside {
+label{
+    font-family: sans-serif;
+    width: auto;
+  }
+aside{
     display: none;
 }
-#wrapper{
+#wrapper{ 
     display: grid;
     grid-template-columns: 150px, 150px, 150px, 150px;
     grid-template-rows: 150px 150px 50px;
 }
-header{
+header {
     grid-row: 1 / 2; grid-column: 1 / 4;
 }
 nav{
@@ -149,47 +145,34 @@ footer{
 .mobiletablet-logo{
     display: inline;
 }
-
-nav ul{
+nav ul {   
     gap: 10px;
 }
 nav a:link{
     font-size: 90%;
 }
-h1{
+
+main {
+    padding: 0.8em;
+    font-size: 50%;
     margin-left: 75px;
     margin-right: 75px;
-}
-.eventinfo{
-    padding: 0.5em;
-    font-size: 13px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-#table{
     margin-top: 20px;
-    margin-bottom: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
-iframe {
-    width: 100%;    
-    height: auto;   
-  }
+footer {
+    font-size: 75%;
+}
+button{
+    width: 50%;
+}
 body{
-    background-image: url(./images/mobilebackgroundimage-pexels.webp);
+    background-image: url(./1Backgroundmobileimage-pexels.webp);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    background-attachment: scroll;  /*changed to scroll for mobile optimisation*/
-}
-footer {
-    font-size: 90%;
-}
-}
-
-@media (max-width: 1024px) {
+    background-attachment:scroll;  /*changed to scroll for mobile optimisation*/
+}}
+@media only screen and (max-width: 1024px) {
 
 .desktop-logo{
     display: none;
@@ -197,18 +180,23 @@ footer {
 .mobiletablet-logo{
     display: inline;
 }
-nav ul li{
-    text-align: center;
-     margin: 0 5px;
+nav{
+    font-size: 100%;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
 }
-main{
+nav ul li {
+    text-align: center;
+    margin: 0 5px;
+}
+main {
     margin: 5px;
     padding: 0.8em;
     font-size: 75%;
-}
-footer{
-    font-family: sans-serif;
-    font-style: bold;
-    color: white;
-    text-shadow: 2px 2px black;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 100px;
 }}
